@@ -1,3 +1,3 @@
 # sharepoint.app.bootstrap
 
-this is sample app for sharepoint online with scoped bootstrap
+this is sample app with wizard form for sharepoint online with scoped bootstrap
