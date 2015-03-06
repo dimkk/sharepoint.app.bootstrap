@@ -23,4 +23,4 @@ function onGetUserNameSuccess() {
 // This function is executed if the above call fails
 function onGetUserNameFail(sender, args) {
     alert('Failed to get user name. Error:' + args.get_message());
-}
+}fsa

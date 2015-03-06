@@ -5,5 +5,11 @@
     <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="bootstrap-scope.min.css" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="bootstrap-scope.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="spinner.gif" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="select2x2.png" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="select2.png" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="select2.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-ui.min.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-ui.css" Target="Content\" Type="ElementFile" />
   </Files>
 </ProjectItem>
