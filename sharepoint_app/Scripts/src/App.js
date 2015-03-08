@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 angular
-    .module('spapp', ['ui.bootstrap', 'ui.router', 'ngAnimate'])
+    .module('spapp', ['ui.router', 'ngAnimate'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('wizard', {
