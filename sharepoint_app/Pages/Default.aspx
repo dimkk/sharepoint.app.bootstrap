@@ -19,79 +19,24 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Page Title
+    Пример простого визарда
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-
     <div class="bootstrap-scope">
         <div class="bootstrap-html">
             <div class="bootstrap-body">
-                    <div class="container">
-                        <div ng-app="spapp">
-                            <div ui-view></div>
-                        </div>
-                        <!--
-                        
-
-                            
-                            
-                            
-                        -->
-                        </div> 
-                
+                  <div class="container">
+                      <div ng-app="spapp">
+                          <div ui-view></div>
+                      </div>
+                  </div> 
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        //$(document).ready(function () {
-
-        //    var navListItems = $('div.setup-panel div a'),
-        //            allWells = $('.setup-content'),
-        //            allNextBtn = $('.nextBtn');
-
-        //    allWells.hide();
-
-        //    navListItems.click(function (e) {
-        //        e.preventDefault();
-        //        var $target = $($(this).attr('href')),
-        //                $item = $(this);
-
-        //        if (!$item.hasClass('disabled')) {
-        //            navListItems.removeClass('btn-primary').addClass('btn-default');
-        //            $item.addClass('btn-primary');
-        //            allWells.hide();
-        //            $target.show();
-        //            $target.find('input:eq(0)').focus();
-        //        }
-        //    });
-
-        //    allNextBtn.click(function () {
-        //        var curStep = $(this).closest(".setup-content"),
-        //            curStepBtn = curStep.attr("id"),
-        //            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-        //            curInputs = curStep.find("input[type='text'],input[type='url']"),
-        //            isValid = true;
-
-        //        $(".form-group").removeClass("has-error");
-        //        for (var i = 0; i < curInputs.length; i++) {
-        //            if (!curInputs[i].validity.valid) {
-        //                isValid = false;
-        //                $(curInputs[i]).closest(".form-group").addClass("has-error");
-        //            }
-        //        }
-
-        //        if (isValid)
-        //            nextStepWizard.removeAttr('disabled').trigger('click');
-        //    });
-
-        //    $('div.setup-panel div a.btn-primary').trigger('click');
-        //});
-    </script>
     <script src="../Scripts/vendor/angular.min.js"></script>
     <script src="../Scripts/vendor/angular-animate.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="../Scripts/vendor/angular-ui-router.min.js"></script>
     <script src="../Scripts/dist/app.js"></script>
 </asp:Content>

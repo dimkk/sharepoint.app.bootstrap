@@ -3,7 +3,6 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
     <ProjectItemFile Source="src\App.js" Target="Scripts\src\" Type="ElementFile" />
-    
     <ProjectItemFile Source="vendor\angular-touch.min.js.map" Target="Scripts\vendor\" Type="ElementFile" />
     <ProjectItemFile Source="vendor\angular-touch.min.js" Target="Scripts\vendor\" Type="ElementFile" />
     <ProjectItemFile Source="vendor\angular-touch.js" Target="Scripts\vendor\" Type="ElementFile" />
@@ -43,5 +42,7 @@
     <ProjectItemFile Source="dist\app.js" Target="Scripts\dist\" Type="ElementFile" />
     <ProjectItemFile Source="dist\app.min.js" Target="Scripts\dist\" Type="ElementFile" />
     <ProjectItemFile Source="dist\app.min.js.map" Target="Scripts\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\angular-ui-router.min.js" Target="Scripts\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="vendor\angular-ui-router.js" Target="Scripts\vendor\" Type="ElementFile" />
   </Files>
 </ProjectItem>

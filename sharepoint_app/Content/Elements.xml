@@ -4,11 +4,5 @@
     <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
     <File Path="Content\bootstrap-scope.min.css" Url="Content/bootstrap-scope.min.css" ReplaceContent="TRUE" />
     <File Path="Content\bootstrap-scope.css" Url="Content/bootstrap-scope.css" ReplaceContent="TRUE" />
-    <File Path="Content\spinner.gif" Url="Content/spinner.gif" ReplaceContent="TRUE" />
-    <File Path="Content\select2x2.png" Url="Content/select2x2.png" ReplaceContent="TRUE" />
-    <File Path="Content\select2.png" Url="Content/select2.png" ReplaceContent="TRUE" />
-    <File Path="Content\select2.css" Url="Content/select2.css" ReplaceContent="TRUE" />
-    <File Path="Content\angular-ui.css" Url="Content/angular-ui.css" ReplaceContent="TRUE" />
-    <File Path="Content\angular-ui.min.css" Url="Content/angular-ui.min.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>

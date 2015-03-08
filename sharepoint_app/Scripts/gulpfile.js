@@ -1,33 +1,18 @@
-// Include gulp
+//Проинициализируем модули
 var gulp = require('gulp');
-
-// Include Our Plugins
-//var jshint = require('gulp-jshint');
-//var uglify = require('gulp-uglify');
-//var rename = require('gulp-rename');
-//var ngmin = require('gulp-ngmin');
 var concat = require('gulp-ngconcat');
 
-// Concatenate & Minify JS
-//gulp.task('scripts', function () {
-//    return gulp.src('src/*.js')
-//        .pipe(concat('app.js'))
-//        .pipe(gulp.dest('dist'))
-//       //.pipe(rename('app.min.js'))
-//       //.pipe(uglify())
-//        .pipe(gulp.dest('dist'));
-//});
-
+//Создадим задачу
 gulp.task('concat', function () {
     gulp.src('src/**/*.js')
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./dist/'));
 });
 
-// Watch Files For Changes
+//Создадим вочер, при изменении файлов, будет дёргать задачу concat
 gulp.task('watch', function () {
     gulp.watch('src/**/*.js', ['concat']);
 });
 
-// Default Task
+//Создадим задачу по умолчанию - она будет исполнятся при выполнении команды gulp
 gulp.task('default', ['concat', 'watch']);

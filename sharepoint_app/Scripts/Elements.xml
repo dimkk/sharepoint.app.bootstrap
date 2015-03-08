@@ -41,5 +41,7 @@
     <File Path="Scripts\dist\app.js" Url="Scripts/dist/app.js" ReplaceContent="TRUE" />
     <File Path="Scripts\dist\app.min.js" Url="Scripts/dist/app.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\dist\app.min.js.map" Url="Scripts/dist/app.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\angular-ui-router.min.js" Url="Scripts/vendor/angular-ui-router.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vendor\angular-ui-router.js" Url="Scripts/vendor/angular-ui-router.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

@@ -30,11 +30,13 @@ angular.module('spapp')
 
         $scope.data = $scope.data || {};
 
+        //Получим нужный нам стиль верхней кнопки
         $scope.getBtnStyle = function (step) {
             var result = $state.$current.name.indexOf(step) != -1 ? 'btn-primary' : 'btn-default';
             return result;
         };
 
+        //Получим необходимость отключения соответствующего контрола
         $scope.getDisabled = function (forStep) {
             if (forStep == 'step1') return false;
             switch ($state.$current.name)
@@ -54,6 +56,7 @@ angular.module('spapp')
             }
         };
 
+        //Сохраним в шарик
         $scope.saveToSharePoint = function () {
             SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function () {
                 saveData($scope.data, 'testList').then(function (data) {
@@ -62,6 +65,7 @@ angular.module('spapp')
             });
         };
 
+        //Пример использования промиса - в таком виде можно выносить, например, в сервис
         function saveData(data, listName) {
             var def = $q.defer();
             var clientContext = new SP.ClientContext(_spPageContextInfo.webAbsoluteUrl);

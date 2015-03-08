@@ -3,4 +3,14 @@
   <PropertyGroup>
     <SharePointSiteUrl>https://2je.sharepoint.com/sites/apps2/</SharePointSiteUrl>
   </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2015-03-08T16:52:04.6642339Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>e98e70d9-b35c-4414-a439-5053501a6dbc</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

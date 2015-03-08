@@ -46,6 +46,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Pages\listView.aspx" />
+    <Content Include="Scripts\vendor\angular-ui-router.js" />
+    <Content Include="Scripts\vendor\angular-ui-router.min.js" />
     <Content Include="testList\Elements.xml" />
     <Content Include="testList\Schema.xml" />
     <Content Include="testList\testListInstance\Elements.xml" />
@@ -53,14 +55,8 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{16018507-048b-4320-a85e-563e0a6fc14d}</SharePointProjectItemId>
     </None>
-    <Content Include="Content\angular-ui.css" />
-    <Content Include="Content\angular-ui.min.css" />
     <Content Include="Content\bootstrap-scope.css" />
     <Content Include="Content\bootstrap-scope.min.css" />
-    <Content Include="Content\select2.css" />
-    <Content Include="Content\select2.png" />
-    <Content Include="Content\select2x2.png" />
-    <Content Include="Content\spinner.gif" />
     <Content Include="Elements.xml" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
@@ -75,8 +71,6 @@
     <None Include="Scripts\vendor\angular-sanitize.min.js.map" />
     <None Include="Scripts\vendor\angular-touch.min.js.map" />
     <None Include="Scripts\vendor\angular.min.js.map" />
-    <None Include="Scripts\errors.json" />
-    <None Include="Scripts\version.json" />
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0985ccaf-d4b2-4e1d-a702-4da1edf4f140}</SharePointProjectItemId>
     </None>
