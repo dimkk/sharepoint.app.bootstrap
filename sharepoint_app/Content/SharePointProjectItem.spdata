@@ -9,7 +9,7 @@
     <ProjectItemFile Source="select2x2.png" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="select2.png" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="select2.css" Target="Content\" Type="ElementFile" />
-    <ProjectItemFile Source="angular-ui.min.css" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="angular-ui.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-ui.min.css" Target="Content\" Type="ElementFile" />
   </Files>
 </ProjectItem>

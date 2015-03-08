@@ -8,7 +8,7 @@
     <File Path="Content\select2x2.png" Url="Content/select2x2.png" ReplaceContent="TRUE" />
     <File Path="Content\select2.png" Url="Content/select2.png" ReplaceContent="TRUE" />
     <File Path="Content\select2.css" Url="Content/select2.css" ReplaceContent="TRUE" />
-    <File Path="Content\angular-ui.min.css" Url="Content/angular-ui.min.css" ReplaceContent="TRUE" />
     <File Path="Content\angular-ui.css" Url="Content/angular-ui.css" ReplaceContent="TRUE" />
+    <File Path="Content\angular-ui.min.css" Url="Content/angular-ui.min.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>
