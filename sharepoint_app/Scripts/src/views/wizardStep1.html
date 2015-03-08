@@ -1,0 +1,22 @@
+﻿<div class="row setup-content" id="step-1">
+    <div class="col-xs-12">
+        <div class="col-md-12">
+            <h3> Step 1</h3>
+            <div class="form-group">
+                <label class="control-label">First Name</label>
+                <input maxlength="100" type="text" required="required" ng-model="data.firstName" class="form-control" name="firstName" placeholder="Enter First Name" />
+                <span style="color:red" ng-show="wizardForm.firstName.$dirty && wizardForm.firstName.$invalid">
+                    <span ng-show="wizardForm.firstName.$error.required">FirstName is required</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Last Name</label>
+                <input maxlength="100" type="text" required="required" ng-model="data.lastName" class="form-control" name="lastName" placeholder="Enter Last Name" />
+                <span style="color:red" ng-show="wizardForm.lastName.$dirty && wizardForm.lastName.$invalid">
+                    <span ng-show="wizardForm.lastName.$error.required">FirstName is required</span>
+                </span>
+            </div>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" ng-disabled="getDisabled('step1')" ui-sref="wizard.step2" type="button">Next</button>
+        </div>
+    </div>
+</div>

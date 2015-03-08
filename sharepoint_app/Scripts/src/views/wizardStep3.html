@@ -1,0 +1,52 @@
+﻿<div class="row setup-content" id="step-1">
+    <div class="col-xs-12">
+        <div class="col-md-12">
+            <h3> Step 1</h3>
+            <div class="form-group">
+                <label class="control-label">First Name</label>
+                <input maxlength="100" type="text" required="required" ng-disabled="true" ng-model="data.firstName" class="form-control" name="firstName" placeholder="Enter First Name" />
+                <span style="color:red" ng-show="wizardForm.firstName.$invalid">
+                    <span ng-show="wizardForm.firstName.$error.required">FirstName is required</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Last Name</label>
+                <input maxlength="100" type="text" required="required" ng-disabled="true" ng-model="data.lastName" class="form-control" name="lastName" placeholder="Enter Last Name" />
+                <span style="color:red" ng-show="wizardForm.lastName.$invalid">
+                    <span ng-show="wizardForm.lastName.$error.required">FirstName is required</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row setup-content" id="step-2">
+    <div class="col-xs-12">
+        <div class="col-md-12">
+            <h3> Step 2</h3>
+            <div class="form-group">
+                <label class="control-label">Company Name</label>
+                <input maxlength="200" type="text" required="required" ng-disabled="true" class="form-control" ng-model="data.companyName" name="companyName" placeholder="Enter Company Name" />
+                <span style="color:red" ng-show="wizardForm.companyName.$invalid">
+                    <span ng-show="wizardForm.companyName.$error.required">companyName is required</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Company Address</label>
+                <input maxlength="200" type="text" required="required" ng-disabled="true" class="form-control" ng-model="data.companyAddress" name="companyAddress" placeholder="Enter Company Address" />
+                <span style="color:red" ng-show="wizardForm.companyAddress.$invalid">
+                    <span ng-show="wizardForm.companyAddress.$error.required">companyAddress is required</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row setup-content" id="step-3">
+    <div class="col-xs-12">
+        <div class="col-md-12">
+            <h3> Step 3</h3>
+            <button class="btn btn-success btn-lg pull-right" ng-click="saveToSharePoint()" type="button" ng-disabled="getDisabled('step3')">Save to SharePoint!</button>
+        </div>
+    </div>
+</div>

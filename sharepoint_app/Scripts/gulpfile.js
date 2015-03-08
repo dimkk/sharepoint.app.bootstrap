@@ -2,33 +2,32 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+//var jshint = require('gulp-jshint');
+//var uglify = require('gulp-uglify');
+//var rename = require('gulp-rename');
+//var ngmin = require('gulp-ngmin');
 var concat = require('gulp-ngconcat');
 
-// Lint Task
-gulp.task('lint', function () {
-    return gulp.src('js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-
 // Concatenate & Minify JS
-gulp.task('scripts', function () {
-    return gulp.src('js/*.js')
+//gulp.task('scripts', function () {
+//    return gulp.src('src/*.js')
+//        .pipe(concat('app.js'))
+//        .pipe(gulp.dest('dist'))
+//       //.pipe(rename('app.min.js'))
+//       //.pipe(uglify())
+//        .pipe(gulp.dest('dist'));
+//});
+
+gulp.task('concat', function () {
+    gulp.src('src/**/*.js')
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('app.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('./dist/'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function () {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
+    gulp.watch('src/**/*.js', ['concat']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'scripts', 'watch']);
+gulp.task('default', ['concat', 'watch']);

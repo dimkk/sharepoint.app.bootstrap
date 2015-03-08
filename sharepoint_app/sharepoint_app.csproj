@@ -23,6 +23,7 @@
     <CspkgPartId>{44d1b9ca-fa0d-46be-b981-05849987efd2}</CspkgPartId>
     <SqlPackagePartId>{1991e12b-d729-40d9-be60-b7b283f81252}</SqlPackagePartId>
     <FileUpgradeFlags />
+    <JSLintSkip>\Scripts\src\controllers\wizardController.js|\Scripts\</JSLintSkip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Pages\listView.aspx" />
+    <Content Include="testList\Elements.xml" />
+    <Content Include="testList\Schema.xml" />
+    <Content Include="testList\testListInstance\Elements.xml" />
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{16018507-048b-4320-a85e-563e0a6fc14d}</SharePointProjectItemId>
@@ -59,6 +64,9 @@
     <Content Include="Elements.xml" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Scripts\dist\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </None>
     <None Include="Scripts\vendor\angular-animate.min.js.map" />
     <None Include="Scripts\vendor\angular-cookies.min.js.map" />
     <None Include="Scripts\vendor\angular-loader.min.js.map" />
@@ -72,11 +80,26 @@
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0985ccaf-d4b2-4e1d-a702-4da1edf4f140}</SharePointProjectItemId>
     </None>
+    <None Include="testList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5cbebdcb-d14c-46b2-9d6d-9a43a781ac91}</SharePointProjectItemId>
+    </None>
+    <None Include="testList\testListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2a670bb-63af-4925-8bef-9609d3491645}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1991e12b-d729-40d9-be60-b7b283f81252}</SharePointProjectItemId>
     </None>
+    <Content Include="Scripts\dist\app.js" />
+    <Content Include="Scripts\dist\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\src\controllers\wizardController.js" />
+    <Content Include="Scripts\src\views\wizardStep3.html" />
+    <Content Include="Scripts\src\views\wizardStep2.html" />
+    <Content Include="Scripts\src\views\wizardStep1.html" />
+    <Content Include="Scripts\src\views\wizard.html" />
     <Content Include="Scripts\vendor\angular-animate.js" />
     <Content Include="Scripts\vendor\angular-animate.min.js" />
     <Content Include="Scripts\vendor\angular-cookies.js" />
@@ -102,7 +125,7 @@
     <Content Include="Scripts\vendor\angular.min.js" />
     <Content Include="Scripts\gulpfile.js" />
     <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\src\App.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
@@ -140,10 +163,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\dist\" />
-    <Folder Include="Scripts\src\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

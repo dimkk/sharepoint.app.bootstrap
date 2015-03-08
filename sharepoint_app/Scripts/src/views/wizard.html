@@ -1,0 +1,19 @@
+﻿<div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+            <a type="button" class="btn btn-circle {{getBtnStyle('step1')}}" ng-disabled="getDisabled('step1')" ui-sref-active="active" ui-sref=".step1">1</a>
+            <p>Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a type="button" class="btn btn-circle {{getBtnStyle('step2')}}" ng-disabled="getDisabled('step2')" ui-sref-active="active" ui-sref=".step2">2</a>
+            <p>Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a type="button" class="btn btn-circle {{getBtnStyle('step3')}}" ng-disabled="getDisabled('step3')" ui-sref-active="active" ui-sref=".step3">3</a>
+            <p>Step 3</p>
+        </div>
+    </div>
+</div>
+<div ng-form="wizardForm">
+    <div id="form-views" ui-view></div>
+</div>
