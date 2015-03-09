@@ -28,7 +28,7 @@ angular
 angular.module('spapp')
     .controller('wizardController', ['$q', '$scope', '$state','$window', function ($q, $scope, $state, $window) {
 
-        $scope.data = $scope.data || {};
+        $scope.data = $scope.data || {}; //Сохраним значения полей при переходах
 
         //Получим нужный нам стиль верхней кнопки
         $scope.getBtnStyle = function (step) {
@@ -42,16 +42,14 @@ angular.module('spapp')
             switch ($state.$current.name)
             {
                 case 'wizard.step1':
-                    if (forStep == 'step3')  return true;
+                    if (forStep == 'step3')  return true; //в слуаче если мы находися на первом шаге, а рендерим контрол для перехода не третий - всегда true, т.е. отключен
                     else return $scope.wizardForm.firstName.$invalid || $scope.wizardForm.lastName.$invalid;
                     break;
                 case 'wizard.step2':
                     return $scope.wizardForm.companyName.$invalid || $scope.wizardForm.companyAddress.$invalid;
                     break;
                 case 'wizard.step3':
-                    var result = $scope.wizardForm.companyName.$invalid || $scope.wizardForm.companyAddress.$invalid || $scope.wizardForm.firstName.$invalid || $scope.wizardForm.lastName.$invalid;
-                    console.log(result);
-                    return result;
+                    return $scope.wizardForm.companyName.$invalid || $scope.wizardForm.companyAddress.$invalid || $scope.wizardForm.firstName.$invalid || $scope.wizardForm.lastName.$invalid;
                     break;
             }
         };
@@ -59,13 +57,15 @@ angular.module('spapp')
         //Сохраним в шарик
         $scope.saveToSharePoint = function () {
             SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function () {
-                saveData($scope.data, 'testList').then(function (data) {
-                    $window.location.href = _spPageContextInfo.webAbsoluteUrl + '/Pages/listView.aspx';
-                });
+                if ($scope.wizardForm.$valid) {
+                    saveData($scope.data, 'testList').then(function (data) {
+                        $window.location.href = _spPageContextInfo.webAbsoluteUrl + '/Pages/listView.aspx';
+                    });
+                }
             });
         };
 
-        //Пример использования промиса - в таком виде можно выносить, например, в сервис
+        //Пример c использованием промиса - в таком виде можно выносить, например, в сервис
         function saveData(data, listName) {
             var def = $q.defer();
             var clientContext = new SP.ClientContext(_spPageContextInfo.webAbsoluteUrl);
